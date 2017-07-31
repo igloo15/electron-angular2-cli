@@ -1,11 +1,18 @@
 const {gitDescribe, gitDescribeSync} = require('git-describe');
+var hasbin = require('hasbin');
 
 // Target working directory
 
-const rootDir = __dirname + "\\..\\";
+var gitExists = hasbin.sync('git');
 
-const gitInfo = gitDescribe(rootDir)
-                  .then((gitInfo) => console.log(gitInfo))
-                  .catch((err) => console.error(err));
+if(gitExists){
+  const rootDir = __dirname + "\\..\\";
 
-console.log(gitInfo);
+  const gitInfo = gitDescribeSync(rootDir);
+
+  console.log(gitInfo);
+}else{
+  console.error("No GIT Found!");
+}
+
+
