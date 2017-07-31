@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import '~material-design-icons';*/
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* @import '~/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot';
+@import '~/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2';
+@import '~/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff';
+@import '~/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.truetype'; */
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+md-card {
+  max-width: 80%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+md-toolbar-row {
+  justify-content: space-between;
+}
+
+.done {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+}
+
+/* @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot');
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('~/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2') format('woff2'),
+    url('~/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff') format('woff'),
+    url('~/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf') format('truetype');
+} */
+
