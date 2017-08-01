@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "getversion": "node ./configs/updatePkg.js"
+    "update:version": "node ./configs/updatePkg.js"
   },
   "private": true,
   "dependencies": {
