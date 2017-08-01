@@ -1,6 +1,6 @@
 {
   "name": "electron-angular2",
-  "version": "0.1.0-dev0004",
+  "version": "0.2.0-dev0001",
   "license": "MIT",
   "main": "dist/entry.js",
   "scripts": {

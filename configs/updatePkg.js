@@ -8,7 +8,7 @@ var gitExists = hasbin.sync('git');
 
 if(gitExists){
 
-  var describeProc = spawn('git', ['describe']);
+  var describeProc = spawn('git', ['describe', '--tags']);
 
   describeProc.stdout.on('data', (data)=>{
 
